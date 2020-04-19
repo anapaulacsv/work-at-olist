@@ -4,7 +4,7 @@ from django.db.models import ObjectDoesNotExist
 
 
 class AuthorTest(TestCase):
-    def setUp (self):
+    def setUp(self):
         #Insert
         a = Author(name='João')
         a.save()
@@ -31,3 +31,22 @@ class AuthorTest(TestCase):
         #Test if the delete is true
         with self.assertRaisesMessage(ObjectDoesNotExist,'Author matching query does not exist.'):
             Author.objects.get(name="Maria")
+
+class BookTest(TestCase):
+    def setUp(self):
+        #Insert
+        aut1 = Author(name='João')
+        aut1.save()
+        aut2 = Author(name='Maria')
+        aut2.save()
+        bk1 = Book(name='True story', edition=111, pub_year=1981)
+        bk1.save()
+        bk1.authors.set([aut1, aut2])
+        bk2 = Book(name='Happy day', edition=27, pub_year=2002)
+        bk2.save()
+        bk2.authors.set([aut1])
+
+    def test_select(self):
+        #Select
+            
+
