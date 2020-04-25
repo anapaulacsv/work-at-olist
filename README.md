@@ -1,7 +1,7 @@
-# Python labs Challenge project 
-
+Python labs Challenge project
 *Used:
-Windows 10 
+
+Windows 10
 Python 3.8.1
 Django 2.2.12
 Heroku Postgres
@@ -11,50 +11,50 @@ Gunicorn 20.0.4
 
 1- Install the requirements
 
-- Download or clone the project into your preferred folder. 
-- In a CMD, browse to your folder.
-- Create/Activate the virtual enviroment. 
-- Install the "requirements.txt"
-
+Download or clone the project into your preferred folder.
+In a CMD, browse to your folder.
+Create/Activate the virtual enviroment.
+Install the “requirements.txt”
 py -m pip install -r requirements.txt
 
 2- Django Migrate
 
-- Run the migrations:
+Run the migrations:
 py manage.py migrate
 
 3- Import Authors
 
-- Run the custom command:
+Run the custom command:
 py manage.py import_authors authors.csv
 
 4- Run tests
 
-- Run the tests:
+Run the tests:
 py manage.py test
 
 OK
-Destroying test database for alias 'default'
+
+Destroying test database for alias ‘default’
 
 5- Create a superuser
 
-- Run the command:
+Run the command:
 py manage.py createsuperuser
 
 6- Run server and login
 
 Run the command:
+
 py manage.py runserver
 
-- In your Browser access this link: http://127.0.0.1:8000/admin
-- Should appear a login page, log in.
-
-* This API is available in Heroku: https://pythonlabs.herokuapp.com/admin/ 
-
+In your Browser access this link: http://127.0.0.1:8000/admin
+Should appear a login page, log in.
+This API is available in Heroku: https://pythonlabs.herokuapp.com/admin/
 7- Access and use the API
-- The API's local endpoints are: 
-- For Authors: http://127.0.0.1:8000/v1.0/authors/
-- For Books: http://127.0.0.1:8000/v1.0/books/
+
+The API’s local endpoints are:
+For Authors: http://127.0.0.1:8000/v1.0/authors/
+For Books: http://127.0.0.1:8000/v1.0/books/
 
 ---------------------------------------------------------------------------------
 
