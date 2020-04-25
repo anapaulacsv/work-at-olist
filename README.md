@@ -2,10 +2,14 @@
 
 ***Used:**
 
-Windows 10
+Windows 10 
+
 Python 3.8.1
+
 Django 2.2.12
+
 Heroku Postgres
+
 Gunicorn 20.0.4
 
 
@@ -13,7 +17,7 @@ Gunicorn 20.0.4
 
 *1- *Install the requirements**
 
-  - Download or clone the project into your preferred folder.
+ - Download or clone the project into your preferred folder.
 - In a CMD, browse to your folder.
 - Create/Activate the virtual enviroment.
 - Install the "requirements.txt"
